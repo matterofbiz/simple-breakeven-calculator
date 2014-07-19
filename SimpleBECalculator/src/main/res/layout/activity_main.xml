@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ScrollView01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                tools:context=".MainActivity">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:context=".MainActivity" >
+
+            <ImageView
+                    android:id="@+id/imageLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/logodesc"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_logo" />
+
+            <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignRight="@+id/textView2"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/fixedcosts"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_below="@+id/imageLogo"/>
+
+            <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editFixedCosts"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/variablecosts"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignTop="@+id/editPrice"
+                    android:layout_below="@id/textView2"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/price"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                    android:id="@+id/editFixedCosts"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editVariableCosts"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignTop="@+id/textView1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:padding="10dp" >
+
+            </EditText>
+
+            <EditText
+                    android:id="@+id/editVariableCosts"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentRight="false"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:padding="10dp" >
+
+            </EditText>
+
+            <EditText
+                    android:id="@+id/editPrice"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:padding="10dp" >
+
+            </EditText>
+
+            <Button
+                    android:id="@+id/btncalc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_marginTop="17dp"
+                    android:onClick="Calc"
+                    android:text="@string/calcdesc"
+                    android:layout_below="@+id/editPrice"/>
+
+            <com.androidplot.xy.XYPlot
+                    android:id="@+id/plotBE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    androidplot.title="Break-even plot"
+                android:layout_below="@+id/btncalc" />
+
+            <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/plotBE"
+                    android:layout_alignRight="@+id/plotBE"
+                    android:layout_below="@id/plotBE"
+                    android:padding="10dp"
+                    android:text="@string/breakeven"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                android:singleLine="false"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/helptext"
+                android:id="@+id/textView"
+                android:layout_below="@+id/textView4"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_margin" />
+
+
+        </RelativeLayout>
+
+</ScrollView>
+
