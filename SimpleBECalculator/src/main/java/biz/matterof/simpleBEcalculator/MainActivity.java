@@ -52,6 +52,7 @@ public class MainActivity extends Activity
         // android boilerplate stuff
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AppRater.app_launched(this);
 
         // initialise the XYPlot reference:
         myBEPlot = (XYPlot) findViewById(R.id.plotBE);

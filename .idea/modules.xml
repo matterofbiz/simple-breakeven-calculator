@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SimpleBECalculator/SimpleBECalculator.iml" filepath="$PROJECT_DIR$/SimpleBECalculator/SimpleBECalculator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SimpleBECalculatorProject.iml" filepath="$PROJECT_DIR$/SimpleBECalculatorProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-breakeven-calculator.iml" filepath="$PROJECT_DIR$/simple-breakeven-calculator.iml" />
     </modules>
   </component>
 </project>
