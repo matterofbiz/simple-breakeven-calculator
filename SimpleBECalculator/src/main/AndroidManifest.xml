@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="biz.matterof.simpleBEcalculator"
-    android:versionCode="11"
-    android:versionName="1.11"
+    android:versionCode="13"
+    android:versionName="1.13"
     android:installLocation="auto" >
 
     <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="20" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +28,6 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

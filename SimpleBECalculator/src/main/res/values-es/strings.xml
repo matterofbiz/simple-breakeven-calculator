@@ -3,15 +3,8 @@
 <resources>
 
     <string name="app_name">Simple Break-even Calculator</string>
-    <string name="menu_settings">Configuración</string>
-    <string name="help">Ayuda</string>
-    <string name="shareit">Comparte</string>
-    <string name="aboutus">Acerca de</string>
     <string name="calcdesc">Calcular</string>
-    <string name="adddesc">+Producto</string>
     <string name="logodesc">Matter of BIZ logo</string>
-    <string name="helpdesc">Ayuda</string>
-    <string name="company">Business Research &amp; Applications Limited\n\u00A9 2014</string>
     <string name="helptext">
         Business Research &amp; Applications Limited \u00A9 2014\nLicensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n\n
         This software makes use of the AndroiPlot libraries, licensed under the License.\n\n
@@ -23,9 +16,6 @@
     <string name="defaultVC">2</string>
     <string name="price">Precio</string>
     <string name="defaultUP">4</string>
-    <string name="pricevar">Precio +/-</string>
     <string name="calcsimple">Calcular</string>
-    <string name="calcadd">+Producto</string>
-    <string name="breakeven">Break-even:\nVentas     :</string>
-    <string name="otherapps">Nuestras apps</string>
+    <string name="breakeven">Punto muerto:\nVentas     :</string>
 </resources>
